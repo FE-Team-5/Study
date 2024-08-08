@@ -59,6 +59,23 @@ class AjwPromise {
       }
     });
   }
+  finally(callback) {
+    return new AjwPromise((resolve, reject) => {
+      const handler = () => {
+        callback();
+        if (this.state === AjwPromise.FULFILLED) resolve(this.value);
+        else if (this.state === AjwPromise.REJECT) {
+          reject(this.value);
+        }
+      };
+      if (this.state === AjwPromise.PENDING) {
+        this.onFulfilledCallback = handler;
+        this.onRejectCallback = handler;
+      } else {
+        handler();
+      }
+    });
+  }
 }
 
 /* 
