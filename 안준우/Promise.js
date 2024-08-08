@@ -32,22 +32,32 @@ class AjwPromise {
     }
   }
   then(callback) {
-    if (this.state === AjwPromise.PENDING) {
-      this.onFulfilledCallback = callback;
-    }
-    if (this.state === AjwPromise.FULFILLED) {
-      callback(this.value);
-    }
-    return this;
+    return new AjwPromise((resolve, reject) => {
+      if (this.state === AjwPromise.PENDING) {
+        this.onFulfilledCallback = () => {
+          const result = callback(this.value);
+          resolve(result);
+        };
+      }
+      if (this.state === AjwPromise.FULFILLED) {
+        const result = callback(this.value);
+        resolve(result);
+      }
+    });
   }
   catch(callback) {
-    if (this.state === AjwPromise.PENDING) {
-      this.onRejectCallback = callback;
-    }
-    if (this.state === AjwPromise.REJECT) {
-      callback(this.value);
-    }
-    return this;
+    return new AjwPromise((resolve, reject) => {
+      if (this.state === AjwPromise.PENDING) {
+        this.onRejectCallback = () => {
+          const result = callback(this.value);
+          resolve(result);
+        };
+      }
+      if (this.state === AjwPromise.REJECT) {
+        const result = callback(this.value);
+        resolve(result);
+      }
+    });
   }
 }
 
