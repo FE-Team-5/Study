@@ -2,6 +2,7 @@ import { callbackTest, callbackTest2 } from "./lib.js";
 
 // case 1
 let a = 0;
+
 function outputA() {
   console.log(a);
 }
