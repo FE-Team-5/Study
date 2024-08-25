@@ -8,6 +8,7 @@ Set 객체 특징
   - delete : 값을 삭제
   - clear : Set객체의 모든 요소 전체 삭제 - 항상 undefined반환
   - has : Set객체에 특정 요소의 존재여부를 boolean으로 반환
+  - foreach : Set객체 내의 요소 순회 가능 
 */
 
 class MySet {
@@ -39,6 +40,7 @@ class MySet {
     return this.items.hasOwnProperty(value);
   }
 
+  //item 개수를 확인하고 반환
   size() {
     return Object.keys(this.items).length;
   }
@@ -47,6 +49,7 @@ class MySet {
     return Object.keys(this.items);
   }
 
+  //
   forEach(callback) {
     for (const key in this.items) {
       if (this.items.hasOwnProperty(key)) {
@@ -82,7 +85,7 @@ console.log("has banana:", m.has("banana")); // false
 // 모든 값을 배열로 변환
 console.log("Set Items", m.toArray()); // [ 'apple','kiwi' ]
 
-// Set의 값을 순회
+// Set의 순회하며 호출
 m.forEach((value) => {
   console.log(value); // apple,kiwi
 });
