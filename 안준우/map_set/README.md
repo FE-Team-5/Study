@@ -1,6 +1,6 @@
 # map 구현해야힐 사항
 
-map 인터페이스
+map 인터페이스 2
 
 interface Map<K, V> {
 clear(): void;
