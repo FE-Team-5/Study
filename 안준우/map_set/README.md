@@ -1,7 +1,6 @@
 # map 구현해야힐 사항
 
 map 인터페이스
-
 interface Map<K, V> {
 clear(): void;
 /**
@@ -32,8 +31,6 @@ readonly size: number;
 }
 
 # set 구현해야할 사항
-
-set 인터페이스
 
 interface Set<T> {
 /\*\*
