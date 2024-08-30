@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./todo.css" />
+    <script src="./dist/todo.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>TypeScript를 사용한 TO-DO APP</h1>
+    </header>
+
+    <main>
+      <div class="todoInputCon">
+        <input
+          class="todoInput"
+          id="todoInput"
+          type="text"
+          placeholder="할 일을 입력하세요"
+        />
+        <button class="todoBtn" id="todoBtn">추가</button>
+      </div>
+
+      <section class="todoListCon">
+        <h2>할 일 목록</h2>
+        <ul class="todoList" id="todoList">
+          <!-- <li class="todoItem">
+            <p>프론트엔드 과제</p>
+            <i class="fa-solid fa-circle-xmark"></i>
+          </li>
+          <li class="todoItem done">
+            <p>객체지향 프로그래밍 공부</p>
+            <i class="fa-solid fa-circle-xmark"></i>
+          </li>
+          <li class="todoItem">
+            <p>운동하기</p>
+            <i class="fa-solid fa-circle-xmark"></i>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
