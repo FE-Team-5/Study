@@ -1,0 +1,136 @@
+body {
+  background-color: #1a1a1a;
+}
+
+/* ------------------- 헤더 -------------------- */
+#header-con {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  min-height: 200px;
+}
+
+#header-title::before {
+  content: url("./dist//rocket.svg");
+}
+
+#header-t1 {
+  color: #4ea8de;
+}
+#header-t2 {
+  color: #1e6f9f;
+}
+
+/* ------------------- 할 일 입력 창 -------------------- */
+#input-con {
+  position: absolute;
+  top: calc(200px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 736px;
+  height: 54px;
+  display: flex;
+  gap: 8px;
+
+  margin-bottom: 64px;
+}
+
+#input {
+  width: 641px;
+  height: auto;
+  border: 1px;
+  border-radius: 8px;
+  padding: 16px;
+  color: #808080;
+  background-color: #262626;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+}
+
+#input-add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 8px;
+
+  width: 87px;
+  height: auto;
+
+  /* Blue Dark */
+  background: #1e6f9f;
+  border-radius: 8px;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: left;
+  color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+#input-add-btn::after {
+  content: url("./dist/plus.svg");
+  width: 16px;
+  height: 16px;
+}
+
+/* ------------------- 할 일 목록 -------------------- */
+
+#to-do-con {
+  color: white;
+  width: 736px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#to-do-con > h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+#to-do-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#to-do-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  width: 736px;
+  height: 56px;
+  background: #262626;
+  border: 1px solid #cccccc;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+#delete-btn {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  background: #1e6f9f;
+  border-radius: 8px;
+  color: #f2f2f2;
+  border: none;
+  width: 75px;
+  height: 30px;
+  cursor: pointer;
+}
