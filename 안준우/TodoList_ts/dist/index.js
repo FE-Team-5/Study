@@ -32,11 +32,18 @@
     }
     $todoList.addEventListener("click", (event) => {
         const target = event.target;
+        const li = target.closest("li");
+        const index = Number(li.getAttribute("data-index"));
         if (target.id === "delete-btn") {
-            const li = target.closest("li");
-            const index = Number(li.getAttribute("data-index"));
             if (index !== null) {
                 list.splice(index, 1);
+                localStorage.setItem("todos", JSON.stringify(list));
+                render();
+            }
+        }
+        else if (target.classList.contains("toggle-done")) {
+            if (index !== null) {
+                list[index].done = !list[index].done;
                 localStorage.setItem("todos", JSON.stringify(list));
                 render();
             }
@@ -45,6 +52,7 @@
     function makeListItem(item, index) {
         return `
     <li data-index=${index}>
+          <input type="checkbox" class="toggle-done" ${item.done ? "checked" : ""}>
           <span>${item.text}</span>
           <button id="delete-btn">Del</button>
     </li>

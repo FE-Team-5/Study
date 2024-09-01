@@ -134,3 +134,8 @@ body {
   height: 30px;
   cursor: pointer;
 }
+
+li input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: gray; /* 선택 사항: 줄 그어진 텍스트를 흐리게 표시 */
+}

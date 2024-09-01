@@ -44,12 +44,21 @@
   // 이벤트 전파 방식
   $todoList.addEventListener("click", (event: MouseEvent) => {
     const target: HTMLElement = event.target as HTMLElement;
+    const li = target.closest("li"); // Find the closest <li> element
+    const index = Number(li!.getAttribute("data-index")); // Get the data-index attribute
     if (target.id === "delete-btn") {
-      const li = target.closest("li"); // Find the closest <li> element
-      const index = Number(li!.getAttribute("data-index")); // Get the data-index attribute
       if (index !== null) {
         list.splice(index, 1);
         localStorage.setItem("todos", JSON.stringify(list));
+        render();
+      }
+    } else if (target.classList.contains("toggle-done")) {
+      if (index !== null) {
+        list[index]!.done = !list[index]!.done;
+        // Update localStorage
+        localStorage.setItem("todos", JSON.stringify(list));
+
+        // Re-render the list
         render();
       }
     }
@@ -58,6 +67,9 @@
   function makeListItem(item: Item, index: number): string {
     return `
     <li data-index=${index}>
+          <input type="checkbox" class="toggle-done" ${
+            item.done ? "checked" : ""
+          }>
           <span>${item.text}</span>
           <button id="delete-btn">Del</button>
     </li>
