@@ -4,9 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List</title>
-    <script type="module" src="/src/main.ts" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="/src/index.ts" defer></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <main>
+        <div class="title">
+          <h1>TO-DO LIST</h1>
+        </div>
+        <form class="input-wrap">
+          <input type="text" placeholder="할 일 목록을 추가하세요." />
+          <button><i class="fa-solid fa-circle-plus"></i></button>
+        </form>
+        <ul class="todos">
+          <li class="checkbox">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="content">밥먹기</span>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </li>
+          <li class="checkbox">
+            <input type="checkbox" checked />
+            <span class="checkmark"></span>
+            <span class="content">숨쉬기</span>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </li>
+          <li class="checkbox">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="content">잠자기</span>
+            <button class="delete-btn">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </li>
+        </ul>
+      </main>
+    </div>
   </body>
 </html>
