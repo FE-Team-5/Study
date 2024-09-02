@@ -1,0 +1,14 @@
+{
+  "name": "todolist_ts",
+  "version": "1.0.0",
+  "description": "https://github.com/chorom-ham/vanilla-js-todo-1886px",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.5.4"
+  }
+}
