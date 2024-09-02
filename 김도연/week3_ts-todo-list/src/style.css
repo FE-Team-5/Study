@@ -114,7 +114,7 @@ main {
   border-radius: 6px;
   background-color: rgb(255 255 255 / 50%);
 }
-.todos .checkbox {
+.todos .todoItem {
   padding: 16px 24px;
   border: 1px solid rgb(255 255 255 / 50%);
   border-radius: 8px;
@@ -122,15 +122,15 @@ main {
   backdrop-filter: blur(8px);
   color: white;
 }
-.todos .checkbox > input[type="checkbox"] {
+.todos .todoItem > input[type="checkbox"] {
   display: none;
 }
-.todos .checkbox {
+.todos .todoItem {
   display: inline-flex;
   align-items: center;
   font-size: 16px;
 }
-.checkbox .checkmark {
+.todoItem .checkmark {
   position: relative;
   width: 24px;
   height: 24px;
@@ -141,7 +141,7 @@ main {
     background-color 0.3s,
     border 0.3s;
 }
-.checkbox .checkmark::after {
+.todoItem .checkmark::after {
   content: "";
   position: absolute;
   top: 45%;
@@ -156,27 +156,27 @@ main {
     opacity 0.3s,
     transform 0.3s;
 }
-.checkbox input[type="checkbox"]:checked + .checkmark::after {
+.todoItem input[type="checkbox"]:checked + .checkmark::after {
   opacity: 1;
 }
-.checkbox .content {
+.todoItem .content {
   font-size: 20px;
   cursor: pointer;
 }
-.checkbox .content:hover {
+.todoItem .content:hover {
   color: var(--primary);
 }
-.checkbox input[type="checkbox"]:checked ~ .content {
+.todoItem input[type="checkbox"]:checked ~ .content {
   text-decoration: line-through;
 }
-.checkbox button {
+.todoItem button {
   cursor: pointer;
 }
-.checkbox button > i {
+.todoItem button > i {
   color: white;
   font-size: 16px;
 }
-.checkbox button:hover > i {
+.todoItem button:hover > i {
   color: var(--primary);
   font-size: 16px;
 }
