@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- <script type="module" src="/src/index.ts" defer></script> -->
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <div class="title">
+          <h1>TO-DO LIST</h1>
+        </div>
+        <div class="input-wrap">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="할 일 목록을 추가하세요."
+          />
+          <button id="add-btn"><i class="fa-solid fa-circle-plus"></i></button>
+        </div>
+        <ul id="todos" class="todos"></ul>
+      </main>
+    </div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
