@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import RoundFillButton from './RoundFillButton';
+import RoundFillButton from '../components/atoms/RoundFillButton';
 
 const meta: Meta<typeof RoundFillButton> = {
   title: 'RoundFillButton',

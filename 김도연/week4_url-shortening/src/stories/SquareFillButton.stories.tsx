@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import SquareFillButton from './SquareFillButton';
+import SquareFillButton from '../components/atoms/SquareFillButton';
 
 const meta: Meta<typeof SquareFillButton> = {
   title: 'SquareFillButton',
