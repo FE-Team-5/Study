@@ -10,7 +10,7 @@ interface RoundButtonProps {
 const RoundButton = styled.button<RoundButtonProps>`
   flex-shrink: 0;
   width: fit-content;
-  padding: 8px 24px;
+  padding: ${(props) => (props.size === 'medium' ? '8px 24px' : '6px 20px')};
   border-radius: 24px;
   background-color: var(--primary);
   color: var(--white);
