@@ -51,3 +51,5 @@ coverage/
 *.test.js
 *.test.ts
 *.test.tsx
+
+*storybook.log
