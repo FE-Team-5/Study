@@ -1,10 +1,14 @@
-import { Global } from '@emotion/react';
-import { globalStyles } from './styles/globalStyles';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import IndexPage from './pages/Index';
 
 function App() {
   return (
     <>
-      <Global styles={globalStyles} />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<IndexPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -9,7 +9,7 @@ const StatisticsContainer = styled.section`
 
 const StatisticsInner = styled.div`
   ${inner}
-  padding-top: 160px;
+  padding-top: 180px;
   padding-bottom: 200px;
 `;
 

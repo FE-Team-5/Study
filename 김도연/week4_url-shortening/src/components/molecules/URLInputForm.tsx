@@ -3,10 +3,14 @@ import styled from '@emotion/styled';
 import URLInput from '../atoms/URLInput';
 import SquareFillButton from '../atoms/SquareFillButton';
 
-const FormContainer = styled.div`
-  position: relative;
+const FormWrapper = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
   overflow: hidden;
-  width: 100%;
+  width: calc(100% - 40px * 2);
+  margin: 0 40px;
   padding: 48px;
   border-radius: 8px;
   background-color: var(--secondary);
@@ -36,11 +40,11 @@ export default function URLInputForm() {
   const [isError, setIsError] = useState(false);
 
   return (
-    <FormContainer>
+    <FormWrapper>
       <InputForm>
         <URLInput validationError={isError} />
         <SquareFillButton>Shorten It!</SquareFillButton>
       </InputForm>
-    </FormContainer>
+    </FormWrapper>
   );
 }
