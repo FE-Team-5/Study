@@ -15,13 +15,14 @@ export default defineConfig({
       version: 'detect',
     },
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', '@emotion'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
+    'plugin:@emotion/recommended',
   ],
   rules: {
     'prettier/prettier': ['error'],
