@@ -32,7 +32,8 @@ const companyLinks: NavLinkProps[] = [
 
 const FooterNav = styled.div`
   display: flex;
-  gap: 80px;
+  gap: 96px;
+  margin-left: auto;
 `;
 
 const NavLinkList = styled.ul`

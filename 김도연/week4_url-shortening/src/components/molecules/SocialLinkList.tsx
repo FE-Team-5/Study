@@ -15,6 +15,8 @@ const SocialLinkWrap = styled.ul`
 
 const SocialLinkItem = styled.a`
   ${center}
+  width: 20px;
+  height: 20px;
   color: var(--white);
   font-size: 20px;
 
