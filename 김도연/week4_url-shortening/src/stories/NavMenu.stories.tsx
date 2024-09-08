@@ -1,25 +1,21 @@
 import { Meta, StoryObj } from '@storybook/react';
-import NavItem from '../components/atoms/NavItem';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NavMenu from '../components/molecules/NavMenu';
 import App from '../App';
 
-const meta: Meta<typeof NavItem> = {
-  title: 'atoms/NavItem',
-  component: NavItem,
+const meta: Meta<typeof NavMenu> = {
+  title: 'atoms/NavMenu',
+  component: NavMenu,
 };
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const NavMenu: Story = {
-  args: {
-    path: '/',
-    children: 'Features',
-  },
-  render: (args) => (
+export const Navigation: Story = {
+  render: () => (
     <BrowserRouter>
-      <NavItem {...args} />
+      <NavMenu />
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
