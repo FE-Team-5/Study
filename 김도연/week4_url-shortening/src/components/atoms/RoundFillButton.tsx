@@ -2,12 +2,12 @@ import styled from '@emotion/styled';
 
 type ButtonSize = 'medium' | 'small';
 
-interface ButtonProps {
+interface RoundButtonProps {
   size?: ButtonSize;
-  children: string;
+  children: React.ReactNode;
 }
 
-const RoundButton = styled.button<ButtonProps>`
+const RoundButton = styled.button<RoundButtonProps>`
   flex-shrink: 0;
   width: fit-content;
   padding: 8px 24px;
@@ -22,6 +22,6 @@ const RoundButton = styled.button<ButtonProps>`
   }
 `;
 
-export default function RoundFillButton({ size = 'medium', children }: ButtonProps) {
+export default function RoundFillButton({ size = 'medium', children }: RoundButtonProps) {
   return <RoundButton size={size}>{children}</RoundButton>;
 }
