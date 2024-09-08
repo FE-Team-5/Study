@@ -73,4 +73,8 @@ export const globalStyles = css`
     background: none;
     cursor: pointer;
   }
+
+  input {
+    border: none;
+  }
 `;
