@@ -11,9 +11,9 @@ interface SquareButtonProps {
 const SquareButton = styled.button<SquareButtonProps>`
   flex-shrink: 0;
   width: fit-content;
-  min-width: ${(props) => (props.size === 'medium' ? 'auto' : '96px')};
-  min-height: 48px;
-  padding: ${(props) => (props.size === 'medium' ? '8px 28px' : '8px 20px')};
+  min-width: ${(props) => (props.size === 'medium' ? 'auto' : '88px')};
+  min-height: ${(props) => (props.size === 'medium' ? '48px' : 'inherit')};
+  padding: ${(props) => (props.size === 'medium' ? '8px 28px' : '6px 16px')};
   border-radius: ${(props) => (props.size === 'medium' ? '8px' : '4px')};
   background-color: ${(props) => (props.primary ? 'var(--primary)' : 'var(--secondary)')};
   color: var(--white);
