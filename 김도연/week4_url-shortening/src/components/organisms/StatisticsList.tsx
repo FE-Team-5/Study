@@ -1,23 +1,6 @@
 import styled from '@emotion/styled';
 import StatisticCard, { StatisticCardProps } from '../molecules/StatisticCard';
 
-const ListContainer = styled.div`
-  display: flex;
-  gap: 32px;
-  position: relative;
-  width: 100%;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: var(--primary);
-  }
-`;
-
 const statisticCards: StatisticCardProps[] = [
   {
     title: 'Brand Recognition',
@@ -35,6 +18,23 @@ const statisticCards: StatisticCardProps[] = [
     iconPath: 'src/assets/icons/icon-fully-customizable.svg',
   },
 ];
+
+const ListContainer = styled.div`
+  display: flex;
+  gap: 32px;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary);
+  }
+`;
 
 export default function StatisticsList() {
   return (
