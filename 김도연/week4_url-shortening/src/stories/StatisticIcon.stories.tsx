@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
 import StatisticIcon from '../components/atoms/StatisticIcon';
-import HeroSection from '../components/organisms/HeroSection';
 
 const meta: Meta<typeof StatisticIcon> = {
   title: 'atoms/StatisticIcon',
@@ -18,7 +17,6 @@ export const Icon: Story = {
   },
   render: (args) => (
     <>
-      <HeroSection />
       <StatisticIcon {...args} />
     </>
   ),

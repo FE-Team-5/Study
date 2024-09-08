@@ -8,14 +8,18 @@ interface StatisticIconProps {
 
 const IconContainer = styled.div`
   ${center}
-  width: 64px;
-  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background-color: var(--secondary);
 
   img {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
 `;
 
