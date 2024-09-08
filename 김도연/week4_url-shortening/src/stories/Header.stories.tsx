@@ -1,21 +1,21 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NavMenu from '../components/molecules/NavMenu';
+import Header from '../components/organisms/Header';
 import App from '../App';
 
-const meta: Meta<typeof NavMenu> = {
-  title: 'molecules/NavMenu',
-  component: NavMenu,
+const meta: Meta<typeof Header> = {
+  title: 'organisms/Header',
+  component: Header,
 };
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Navigation: Story = {
+export const SampleHeader: Story = {
   render: () => (
     <BrowserRouter>
-      <NavMenu />
+      <Header />
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>

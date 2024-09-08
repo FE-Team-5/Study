@@ -1,10 +1,9 @@
-import React from 'react';
-import type { Preview } from '@storybook/react';
+import type { Preview, StoryFn } from '@storybook/react';
 import { Global } from '@emotion/react';
 import { globalStyles } from '../src/styles/globalStyles';
 
 export const decorators = [
-  (Story) => (
+  (Story: StoryFn) => (
     <>
       <div style={{ padding: '8px', height: '100vh', background: '#F9FBFF' }}>
         <Global styles={globalStyles} />
