@@ -7,7 +7,7 @@ interface NavItemProps {
 }
 
 const NavItemContainer = styled.li`
-  padding: 8px 12px;
+  padding: 8px 16px;
   font-size: var(--fs-s);
 
   &:hover {
