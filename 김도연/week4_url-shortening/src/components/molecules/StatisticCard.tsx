@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import StatisticIcon from '../atoms/StatisticIcon';
 
-interface StatisticCardProps {
+export interface StatisticCardProps {
   title: string;
   summary: string;
   iconPath: string;
