@@ -6,7 +6,7 @@ interface NavItemProps {
   children: React.ReactNode;
 }
 
-const NavItemContainer = styled(NavLink)`
+const NavItemContainer = styled.li`
   padding: 8px 12px;
   font-size: var(--fs-s);
 
@@ -16,5 +16,9 @@ const NavItemContainer = styled(NavLink)`
 `;
 
 export default function NavItem({ path, children }: NavItemProps) {
-  return <NavItemContainer to={path}>{children}</NavItemContainer>;
+  return (
+    <NavItemContainer>
+      <NavLink to={path}>{children}</NavLink>
+    </NavItemContainer>
+  );
 }

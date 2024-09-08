@@ -56,7 +56,8 @@ export const globalStyles = css`
   }
 
   ul,
-  ol {
+  ol,
+  li {
     list-style: none;
   }
 
