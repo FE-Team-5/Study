@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import SquareFillButton from '../components/atoms/SquareFillButton';
 
 const meta: Meta<typeof SquareFillButton> = {
-  title: 'SquareFillButton',
+  title: 'atoms/SquareFillButton',
   component: SquareFillButton,
 };
 
@@ -15,9 +15,9 @@ export const MediumButton: Story = {
     children: 'Shorten It!',
   },
   render: (args) => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <>
       <SquareFillButton {...args} />
-    </div>
+    </>
   ),
 };
 

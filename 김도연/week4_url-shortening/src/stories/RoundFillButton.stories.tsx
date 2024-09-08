@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import RoundFillButton from '../components/atoms/RoundFillButton';
 
 const meta: Meta<typeof RoundFillButton> = {
-  title: 'RoundFillButton',
+  title: 'atoms/RoundFillButton',
   component: RoundFillButton,
 };
 
@@ -16,9 +16,9 @@ export const MediumButton: Story = {
     children: 'Get Started',
   },
   render: (args) => (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+    <>
       <RoundFillButton {...args} />
-    </div>
+    </>
   ),
 };
 
