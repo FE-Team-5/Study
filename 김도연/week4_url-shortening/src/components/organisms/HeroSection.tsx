@@ -1,6 +1,5 @@
-import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
-import { center, inner } from '../../styles/mixins';
+import { inner } from '../../styles/mixins';
 import RoundFillButton from '../atoms/RoundFillButton';
 
 const HeroContainer = styled.section`

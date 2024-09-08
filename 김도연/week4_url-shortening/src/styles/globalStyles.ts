@@ -10,6 +10,7 @@ export const globalStyles = css`
     --secondary: #3b3054;
     --red: #f46262;
 
+    --dark-100: #f0f1f7;
     --dark-300: #bfbfbf;
     --dark-500: #9e9aa7;
     --dark-700: #35323e;
@@ -23,6 +24,7 @@ export const globalStyles = css`
     --fs-l: 1.125rem;
     --fs-xl: 1.25rem;
     --fs-2xl: 1.5rem;
+    --fs-3xl: 2rem;
 
     /* Font Weight */
     --fw-m: 500;
@@ -48,6 +50,11 @@ export const globalStyles = css`
     font-size: var(--fs-base);
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+  }
+
+  h2 {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-b);
   }
 
   a {
