@@ -1,0 +1,22 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "목표 : JEST, StoryBook , React 이용하여 아래 디자인 시안 구현",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc",
+    "test": "jest",
+    "build": "tsc --project tsconfig.test.json",
+    "dev": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "ts-jest": "^29.2.5"
+  }
+}
