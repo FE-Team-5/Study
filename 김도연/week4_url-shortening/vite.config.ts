@@ -10,4 +10,12 @@ export default defineConfig({
   ssr: {
     noExternal: ['@fortawesome/fontawesome-svg-core', '@fortawesome/react-fontawesome'],
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://cleanuri.com',
+        changeOrigin: true,
+      },
+    },
+  },
 });

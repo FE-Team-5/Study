@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { MouseEventHandler } from 'react';
 
 type ButtonSize = 'medium' | 'small';
 
@@ -6,6 +7,7 @@ interface SquareButtonProps {
   primary?: boolean;
   size?: ButtonSize;
   children: React.ReactNode;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
 const SquareButton = styled.button<SquareButtonProps>`
@@ -30,9 +32,10 @@ export default function SquareFillButton({
   primary = true,
   size = 'medium',
   children,
+  onClick,
 }: SquareButtonProps) {
   return (
-    <SquareButton primary={primary} size={size}>
+    <SquareButton primary={primary} size={size} onClick={onClick}>
       {children}
     </SquareButton>
   );

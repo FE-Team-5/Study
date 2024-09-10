@@ -1,7 +1,9 @@
+import { ChangeEventHandler } from 'react';
 import styled from '@emotion/styled';
 
 interface URLInputProps {
   validationError: boolean;
+  onChange: ChangeEventHandler<HTMLInputElement>;
 }
 
 const Input = styled.input<URLInputProps>`
@@ -22,6 +24,12 @@ const Input = styled.input<URLInputProps>`
   }
 `;
 
-export default function URLInput({ validationError }: URLInputProps) {
-  return <Input placeholder="Shorten a link here..." validationError={validationError}></Input>;
+export default function URLInput({ validationError, onChange }: URLInputProps) {
+  return (
+    <Input
+      placeholder="Shorten a link here..."
+      validationError={validationError}
+      onChange={onChange}
+    />
+  );
 }

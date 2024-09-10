@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { inner } from '../../styles/mixins';
 import RoundFillButton from '../atoms/RoundFillButton';
-import URLInputForm from '../molecules/URLInputForm';
 
 const HeroContainer = styled.section`
   width: 100%;
@@ -13,7 +12,6 @@ const HeroInner = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  position: relative;
   padding-top: 48px;
   padding-bottom: 148px;
 `;
@@ -60,7 +58,6 @@ export default function HeroSection() {
         <HeroImage>
           <img src="src/assets/images/illustration-working.svg" alt="hero image" />
         </HeroImage>
-        <URLInputForm />
       </HeroInner>
     </HeroContainer>
   );
