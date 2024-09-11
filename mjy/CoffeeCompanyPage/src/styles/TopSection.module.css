@@ -1,0 +1,29 @@
+.TopSection {
+  height: calc(50vh);
+  background-image: url("../assets/images/coffeebackground.svg");
+  background-size: cover;
+  border-radius: 1rem;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.title,
+.description {
+  color: var(--light-white);
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.description {
+  width: 40%;
+}
+
+.createBtn {
+  font-size: 1rem;
+  padding: 20px 50px;
+}

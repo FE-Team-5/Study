@@ -1,0 +1,86 @@
+.WhyChooseSection {
+  height: 100vh;
+  position: relative;
+}
+
+.wrap {
+  background-color: var(--dark-gray1);
+  height: 60%;
+}
+
+.textCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 40px;
+  top: 70px;
+}
+
+.title,
+.description {
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.description {
+  width: 50%;
+  text-align: center;
+}
+
+.cardList {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card {
+  width: 32%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--light-green);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  /* gap: 10px; */
+
+  transition: transform 0.5s ease;
+  position: relative;
+  &:hover {
+    transform: translateY(-40px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.icon {
+  color: var(--light-peach);
+  font-size: 5rem;
+}
+
+.cardTitle,
+.cardDescript {
+  color: white;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+}
+
+.cardDescript {
+  position: relative;
+  height: 50%;
+  width: 80%;
+}

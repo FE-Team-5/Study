@@ -1,0 +1,14 @@
+.nav,
+.NavList {
+  display: flex;
+  gap: 1rem;
+}
+
+.listItem {
+  color: var(--light-gray1);
+}
+
+.NavList > li :hover {
+  color: var(--dark-gray1);
+  text-decoration: underline;
+}

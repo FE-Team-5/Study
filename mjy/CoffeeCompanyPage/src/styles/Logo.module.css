@@ -1,0 +1,8 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoText {
+  color: var(--dark-gray1);
+}
