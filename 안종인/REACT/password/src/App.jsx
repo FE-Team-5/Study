@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import "./App.css";
 import React from "react";
-import PasswordInput from "../../component/PasswordInput";
-import PasswordSetting from "../../component/PasswordSetting";
-import Strength from "../../component/Strength";
+import PasswordInput from "../component/PasswordInput";
+import PasswordSetting from "../component/PasswordSetting";
+import Strength from "../component/Strength";
 import { useState } from "react";
 
 function App() {
@@ -35,20 +35,22 @@ function App() {
     if (/[a-z]/.test(pwd)) strengthCounter++;
     if (/[0-9]/.test(pwd)) strengthCounter++;
     if (/[!@#$%^&*()_+[\]{}|;:',.<>/?`~]/.test(pwd)) strengthCounter++;
-    if (pwd.length >= 12) strengthCounter++; // 길이가 12 이상일 경우 추가 점수
 
     const strengthLevels = ["약함", "보통", "강함", "매우 강함"];
     setStrength(strengthLevels[strengthCounter - 1] || "약함");
   };
   return (
-    <div>
-      <PasswordInput
-        password={password}
-        onPasswordChange={handlePasswordChange}
-      />
-      <PasswordSetting setting={setting} />
-      <Strength strength={strength} />
-    </div>
+    <>
+      <h2 className="title">password Generator</h2>
+      <div>
+        <PasswordInput
+          password={password}
+          onPasswordChange={handlePasswordChange}
+        />
+        <PasswordSetting setting={setting} />
+        <Strength strength={strength} />
+      </div>
+    </>
   );
 }
 
