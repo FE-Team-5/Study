@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --green1-color: #00462a;
+  --beige1-color: #eeeecc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pretendard-Regular";
+}
+
+body {
+  background-color: var(--beige1-color);
+}
+
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  background-color: var(--green1-color);
+}
+
+header > h1 {
+  padding: 10px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.todoInputCon {
+  display: flex;
+  gap: 10px;
+  background-color: var(--green1-color);
+  padding: 10px;
+}
+
+#todoInput {
+  flex: 1;
+}
+
+#todoInput,
+#todoBtn {
+  padding: 0.5rem;
+}
+
+.todoListCon {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.todoList {
+  list-style: none;
+  padding: 20px;
+}
+
+.todoItem {
+  display: flex;
+  margin: 5px;
+}
+
+.todoItem > p:hover {
+  background-color: white;
+}
+
+.todoItem > i:hover {
+  color: white;
+}
+
+.fa-circle-xmark {
+  color: var(--green1-color);
+}
+
+.todoItem > p {
+  margin: 0 10px 0 0;
+}
+
+.done > p {
+  text-decoration-line: line-through;
+}
