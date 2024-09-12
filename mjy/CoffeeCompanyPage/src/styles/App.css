@@ -1,0 +1,60 @@
+:root {
+  --light-peach: #fdd6b9;
+  --light-green: #03857d;
+  --dark-gray1: #2c353e;
+  --light-gray1: #6b747d;
+  --light-white: white;
+  --light-beige1: #fdfcf7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JalnanGothic";
+  text-decoration-line: none;
+}
+
+.mw {
+  max-width: 1600px;
+  width: calc(100%-40px);
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--light-white);
+  font-weight: bold;
+  background-color: var(--light-green);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+section {
+  height: 50vh;
+}
+
+span {
+  line-height: 30px;
+}
+
+@font-face {
+  font-family: "JalnanGothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

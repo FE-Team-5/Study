@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--dark-gray1);
+  padding: 1rem 1rem;
+  overflow: scroll;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.footer > * {
+}

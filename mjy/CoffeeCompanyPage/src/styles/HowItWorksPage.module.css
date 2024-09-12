@@ -1,0 +1,38 @@
+.HowItWorksPage {
+  position: relative;
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titleCon {
+  position: relative;
+  width: 100%;
+}
+
+.title {
+  color: var(--light-gray1);
+  font-size: 2rem;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+}
+
+.btnCon {
+  position: relative;
+  width: 100%;
+  bottom: 100px;
+}
+
+.createBtn {
+  position: absolute;
+}
