@@ -1,0 +1,50 @@
+* {
+  background-color: black;
+  color: white;
+}
+.title {
+  text-align: center;
+  color: #ccc;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.inputwrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputpassword {
+  height: 50px;
+  width: 500px;
+  background-color: grey;
+}
+.checkwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8px;
+  padding: 16px;
+  width: 480px;
+  margin: 16px auto;
+  background-color: gray;
+}
+.checklabel input {
+  margin-right: 8px;
+}
+.strength {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  width: 500px;
+  margin: auto;
+  padding: 16px;
+}
+.strength h3 {
+  background-color: gray;
+}
+.checklabel {
+  background-color: gray;
+}
